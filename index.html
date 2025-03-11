@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Interactive canvas container -->
+    <div id="particle-container">
+        <canvas id="particle-canvas"></canvas>
+        <div class="canvas-overlay">
+            <div class="welcome-message">Click anywhere to begin</div>
+        </div>
+    </div>
+    
+    <div class="container hidden">
+        <!-- Galaxy-style background with stars -->
+        <div class="star-field">
+            <div class="layer" id="stars1"></div>
+            <div class="layer" id="stars2"></div>
+            <div class="layer" id="stars3"></div>
+        </div>
+        
+        <!-- Floating circular navigation -->
+        <div class="orbit-container">
+            <div class="center-content">
+                <div class="profile-circle">
+                    <div class="profile-initial">KS</div>
+                </div>
+                <h1 class="name-text">Keval <span class="accent-text">Solankure</span></h1>
+                <p class="profession">Creative Designer</p>
+            </div>
+            
+            <div class="orbit">
+                <a href="about.html" class="orbit-item" style="--angle: 0deg" onclick="sessionStorage.setItem('hasSeenIntro', 'true')">
+                    <div class="orbit-icon"><i class="fas fa-user"></i></div>
+                    <div class="orbit-label">About</div>
+                </a>
+                <a href="projects.html" class="orbit-item" style="--angle: 90deg" onclick="sessionStorage.setItem('hasSeenIntro', 'true')">
+                    <div class="orbit-icon"><i class="fas fa-code"></i></div>
+                    <div class="orbit-label">Projects</div>
+                </a>
+                <a href="skills.html" class="orbit-item" style="--angle: 180deg" onclick="sessionStorage.setItem('hasSeenIntro', 'true')">
+                    <div class="orbit-icon"><i class="fas fa-cogs"></i></div>
+                    <div class="orbit-label">Skills</div>
+                </a>
+                <a href="contact.html" class="orbit-item" style="--angle: 270deg" onclick="sessionStorage.setItem('hasSeenIntro', 'true')">
+                    <div class="orbit-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="orbit-label">Contact</div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Glowing social links -->
+        <div class="social-links">
+            <a href="https://github.com/" class="social-icon glow-effect">
+                <i class="fab fa-github"></i>
+                <div class="glow-container">
+                    <div class="glow"></div>
+                </div>
+            </a>
+            <a href="#" class="social-icon glow-effect">
+                <i class="fab fa-linkedin"></i>
+                <div class="glow-container">
+                    <div class="glow"></div>
+                </div>
+            </a>
+            <a href="#" class="social-icon glow-effect">
+                <i class="fab fa-twitter"></i>
+                <div class="glow-container">
+                    <div class="glow"></div>
+                </div>
+            </a>
+            <a href="#" class="social-icon glow-effect">
+                <i class="fab fa-instagram"></i>
+                <div class="glow-container">
+                    <div class="glow"></div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Animated footer with typing effect -->
+        <footer>
+            <div class="typing-container">
+                <span class="static-text">&copy; 2025</span>
+                <span class="typing-text"></span>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="cursor.js"></script>
+    <script src="particles.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // Initialize cursor effect after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            new CursorEffect();
+        });
+    </script>
+</body>
+</html>

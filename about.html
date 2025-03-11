@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Keval</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/scroll-fixes.css">
+</head>
+<body>
+    <!-- Galaxy-style background with stars -->
+    <div class="star-field">
+        <div class="layer" id="stars1"></div>
+        <div class="layer" id="stars2"></div>
+        <div class="layer" id="stars3"></div>
+    </div>
+    
+    <!-- Header with home link -->
+    <header class="about-header">
+        <a href="index.html" class="home-link" id="back-to-home">
+            <i class="fas fa-arrow-left"></i> <span>Back to Home</span>
+        </a>
+    </header>
+    
+    <!-- Main about content -->
+    <main class="about-main">
+        <!-- Profile section -->
+        <section class="profile-section" data-animate="true" data-animation="fadeIn" data-delay="0.2">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="assets/profile.jpg" alt="Keval" class="profile-image">
+                </div>
+                <h1 class="profile-name">Keval</h1>
+                <h2 class="profile-title">Creative Designer</h2>
+            </div>
+        </section>
+        
+        <!-- Bio section -->
+        <section class="bio-section" data-animate="true" data-animation="fadeInUp" data-delay="0.4">
+            <div class="bio-content">
+                <h2 class="section-heading">About Me</h2>
+                <p>Hello! I'm Keval, a passionate creative designer with expertise in digital design and web development. I specialize in creating engaging user experiences that blend aesthetics with functionality.</p>
+                <p>With a keen eye for detail and a love for clean, modern design, I strive to create digital products that not only look beautiful but also provide intuitive user experiences.</p>
+                
+                <h3 class="subsection-heading">Background</h3>
+                <p>I hold a degree in Computer Science with a focus on UI/UX design. My journey in the creative field started as a self-taught designer, experimenting with various digital tools and platforms.</p>
+                <p>Over the years, I've worked with startups and established companies, helping them create meaningful digital presences and innovative products.</p>
+                
+                <h3 class="subsection-heading">My Approach</h3>
+                <p>I believe in a user-centered approach to design, where understanding the end-user's needs is paramount. My process involves thorough research, iterative prototyping, and continuous refinement based on feedback.</p>
+            </div>
+        </section>
+        
+        <!-- Timeline section -->
+        <section class="timeline-section" data-animate="true" data-animation="fadeIn" data-delay="0.6">
+            <h2 class="section-heading">Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-animate="true" data-animation="fadeInLeft" data-delay="0.8">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3 class="timeline-title">Senior Creative Designer</h3>
+                        <p>Leading design teams and implementing innovative solutions for global clients.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-animate="true" data-animation="fadeInRight" data-delay="1.0">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021</span>
+                        <h3 class="timeline-title">UI/UX Designer</h3>
+                        <p>Designed user-centered experiences for web and mobile applications.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-animate="true" data-animation="fadeInLeft" data-delay="1.2">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019</span>
+                        <h3 class="timeline-title">Web Designer</h3>
+                        <p>Created responsive websites and digital marketing materials for various clients.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-animate="true" data-animation="fadeInRight" data-delay="1.4">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2017</span>
+                        <h3 class="timeline-title">Computer Science Graduate</h3>
+                        <p>Specialized in UI/UX design principles and interactive systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="about-footer" data-animate="true" data-animation="fadeIn" data-delay="1.6">
+        <p>&copy; 2025 Keval</p>
+    </footer>
+    
+    <script src="cursor.js"></script>
+    <script src="about.js"></script>
+    <script src="js/scroll-top.js"></script>
+    <script>
+        // Ensure we mark that the user has seen the intro when clicking back to home
+        document.getElementById('back-to-home').addEventListener('click', function() {
+            sessionStorage.setItem('hasSeenIntro', 'true');
+        });
+        
+        // Initialize cursor effect
+        document.addEventListener('DOMContentLoaded', function() {
+            new CursorEffect();
+        });
+    </script>
+</body>
+</html>

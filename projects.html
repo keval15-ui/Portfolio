@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Keval</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Galaxy-style background with stars -->
+    <div class="star-field">
+        <div class="layer" id="stars1"></div>
+        <div class="layer" id="stars2"></div>
+        <div class="layer" id="stars3"></div>
+    </div>
+    
+    <!-- Header with home link -->
+    <header class="projects-header">
+        <a href="index.html" class="home-link" id="back-to-home">
+            <i class="fas fa-arrow-left"></i> <span>Back to Home</span>
+        </a>
+    </header>
+    
+    <!-- Main projects content -->
+    <main class="projects-main">
+        <section class="projects-intro" data-animate="true" data-animation="fadeIn" data-delay="0.2">
+            <h1 class="section-heading">My Projects</h1>
+            <p class="intro-text">Explore a collection of my creative work across various domains including web design, UI/UX, and digital art.</p>
+        </section>
+        
+        <!-- Filter controls -->
+        <section class="filter-section" data-animate="true" data-animation="fadeInUp" data-delay="0.4">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search projects...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </section>
+        
+        <!-- Projects grid -->
+        <section class="projects-grid" data-animate="true" data-animation="fadeIn" data-delay="0.6">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="web ui" data-animate="true" data-animation="fadeInUp" data-delay="0.7">
+                <div class="project-image">
+                    <img src="assets/project1.jpg" alt="E-commerce Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">A modern e-commerce platform with seamless user experience and responsive design.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card" data-category="ui" data-animate="true" data-animation="fadeInUp" data-delay="0.8">
+                <div class="project-image">
+                    <img src="assets/project2.jpg" alt="Mobile App UI">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Fitness Tracker App</h3>
+                    <p class="project-description">A mobile application designed to track fitness activities with intuitive UI.</p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">UI Design</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card" data-category="graphic" data-animate="true" data-animation="fadeInUp" data-delay="0.9">
+                <div class="project-image">
+                    <img src="assets/project3.jpg" alt="Brand Identity">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Brand Identity Design</h3>
+                    <p class="project-description">Complete brand identity design including logo, color palette, and typography.</p>
+                    <div class="project-tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Illustrator</span>
+                        <span class="tag">Photoshop</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card" data-category="web" data-animate="true" data-animation="fadeInUp" data-delay="1.0">
+                <div class="project-image">
+                    <img src="assets/project4.jpg" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Personal Portfolio</h3>
+                    <p class="project-description">A creative portfolio website with interactive elements and smooth animations.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card" data-category="ui web" data-animate="true" data-animation="fadeInUp" data-delay="1.1">
+                <div class="project-image">
+                    <img src="assets/project5.jpg" alt="Dashboard UI">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <p class="project-description">Data visualization dashboard with real-time updates and interactive charts.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="project-card" data-category="graphic" data-animate="true" data-animation="fadeInUp" data-delay="1.2">
+                <div class="project-image">
+                    <img src="assets/project6.jpg" alt="Digital Art">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Digital Art Collection</h3>
+                    <p class="project-description">A series of digital illustrations exploring abstract concepts and vivid colors.</p>
+                    <div class="project-tags">
+                        <span class="tag">Procreate</span>
+                        <span class="tag">Digital Art</span>
+                        <span class="tag">Illustration</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No results message -->
+            <div class="no-results hidden">
+                <i class="fas fa-search"></i>
+                <p>No projects match your search criteria.</p>
+            </div>
+        </section>
+        
+        <!-- Project modal -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-body">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="projects-footer" data-animate="true" data-animation="fadeIn" data-delay="1.4">
+        <p>&copy; 2025 Keval</p>
+    </footer>
+    
+    <script src="cursor.js"></script>
+    <script src="projects.js"></script>
+    <script>
+        // Ensure we mark that the user has seen the intro when clicking back to home
+        document.getElementById('back-to-home').addEventListener('click', function() {
+            sessionStorage.setItem('hasSeenIntro', 'true');
+        });
+        
+        // Initialize cursor effect
+        document.addEventListener('DOMContentLoaded', function() {
+            new CursorEffect();
+        });
+    </script>
+</body>
+</html>
