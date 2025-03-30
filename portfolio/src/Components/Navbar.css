@@ -1,0 +1,128 @@
+.navbar {
+  background-color: #1a1a1a;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.navbar-logo a {
+  color: #8a2be2;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  padding: 0 20px;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.navbar-links li a:hover {
+  color: #0ff;
+  background: rgba(0, 255, 255, 0.1);
+}
+
+.navbar-links li a.active {
+  color: #0ff;
+  background: rgba(138, 43, 226, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #8a2be2, #0ff);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar-links li a:hover::after {
+  width: 70%;
+}
+
+.navbar-links li a.active::after {
+  width: 80%;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background-color: #1a1a1a;
+    transition: all 0.5s ease;
+  }
+  
+  .navbar-menu.active {
+    left: 0;
+  }
+  
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .navbar-links li {
+    padding: 15px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
