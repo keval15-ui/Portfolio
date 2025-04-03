@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Contact.css';
+import '../../styles/Contact.css';
+// import emailjs from 'emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +48,7 @@ const Contact = () => {
       setFormStatus({
         submitted: false,
         error: true,
-        message: 'Something went wrong. Please try again later.'
+        message: 'Something went wrong. Please try again later.'+error
       });
     }
   };
@@ -85,8 +86,8 @@ const Contact = () => {
               </div>
               <div className="contact-detail">
                 <h3>Email Me</h3>
-                <p>kevalsolankure@gmail.com</p>
-                {/* <a href="mailto:kevalsolankure@gmail.com" className="contact-link">Send Email</a> */}
+                
+                <a href="mailto:kevalsolankure@gmail.com" className="contact-link">Send Email</a>
               </div>
             </div>
             
