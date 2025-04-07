@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Projects.css";
+import "@/styles/Projects.css";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
