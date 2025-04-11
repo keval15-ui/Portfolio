@@ -94,12 +94,7 @@ const Contact = () => {
               <div className="contact-detail">
                 <h3>Email Me</h3>
                 <p className="email-content">kevalsolankure@gmail.com</p>
-                <a
-                  href="mailto:kevalsolankure@gmail.com"
-                  className="contact-link"
-                >
-                  Send Email
-                </a>
+              
               </div>
             </div>
 
@@ -112,7 +107,7 @@ const Contact = () => {
               </div>
               <div className="contact-detail">
                 <h3>Location</h3>
-                <p>Pune, India</p>
+                <p>Chennai, India</p>
               </div>
             </div>
 

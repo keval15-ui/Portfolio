@@ -239,3 +239,19 @@ a:hover {
   min-height: 100vh;
   padding: 2rem;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .space-section {
+    padding: 1rem;
+  }
+
+  .space-card {
+    padding: 1rem;
+  }
+
+  .planet {
+    width: 80px;
+    height: 80px;
+  }
+}
