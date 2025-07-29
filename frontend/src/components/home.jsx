@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleExploreWork = () => {
+    navigate('/projects');
+  };
+
   return (
     <div className="hero creative-hero">
       <div className="hero-background-pattern"></div>
@@ -25,7 +32,7 @@ const Home = () => {
         {/* Avatar Section */}
         <div className="avatar-section">
           <div className="avatar-container">
-            <div className="avatar-placeholder">
+            <div className="avatar-placeholder" role="img" aria-label="Developer avatar">
               <div className="avatar-icon">👨‍💻</div>
               <div className="pen-stylus">✏️</div>
             </div>
@@ -34,7 +41,7 @@ const Home = () => {
           {/* 3D Portfolio Text */}
           <div className="portfolio-3d-text">
             <span className="portfolio-text">PORTFOLIO</span>
-            <div className="text-shadow"></div>
+            <div className="text-shadow" aria-hidden="true"></div>
           </div>
         </div>
 
@@ -81,22 +88,22 @@ const Home = () => {
 
         {/* Social Links */}
         <div className="social-links">
-          {/* <a href="" className="social-link email">
+          <a href="mailto:your.email@example.com" className="social-link email">
             <span className="social-icon">📧</span>
             <span>Email</span>
-          </a> */}
-          <a href="https://www.linkedin.com/in/yourusername" className="social-link linkedin">
+          </a>
+          <a href="https://www.linkedin.com/in/keval-solankure" className="social-link linkedin" target="_blank" rel="noopener noreferrer">
             <span className="social-icon">💼</span>
             <span>LinkedIn</span>
           </a>
-          <a href="https://github.com/yourusername" className="social-link github">
+          <a href="https://github.com/kevalsolankure" className="social-link github" target="_blank" rel="noopener noreferrer">
             <span className="social-icon">🐱</span>
             <span>GitHub</span>
           </a>
         </div>
 
         {/* CTA Button */}
-        <button className="cta-button creative-cta">
+        <button className="cta-button creative-cta" onClick={handleExploreWork}>
           <span>Explore My Work</span>
           <div className="button-decoration">🚀</div>
         </button>
