@@ -9,6 +9,10 @@ const Home = () => {
     navigate('/projects');
   };
 
+  const handleReadMore = () => {
+    navigate('/about');
+  };
+
   return (
     <div className="hero creative-hero">
       <div className="hero-background-pattern"></div>
@@ -43,6 +47,31 @@ const Home = () => {
           <div className="portfolio-3d-text">
             <span className="portfolio-text">PORTFOLIO</span>
             <div className="text-shadow" aria-hidden="true"></div>
+          </div>
+        </div>
+        
+        {/* About Preview Section */}
+        <div className="about-preview">
+          <h3 className="about-title">A Little About Me</h3>
+          <div className="about-content">
+            <div className="handwritten-intro">
+              <p>Hello! I'm Keval, a passionate frontend developer who loves creating beautiful, functional websites and applications. I specialize in React, JavaScript, and modern web technologies.</p>
+              <p>I believe in clean code, responsive design, and creating delightful user experiences.</p>
+              <button className="creative-cta read-more-btn" onClick={handleReadMore}>
+                <span>Read More</span>
+                <div className="button-decoration">📖</div>
+              </button>
+            </div>
+            <div className="photo-frame">
+              <div className="frame-inner">
+                <div className="placeholder-photo">
+                  👨‍💻
+                </div>
+                <div className="frame-caption">
+                  That's me!
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -80,7 +109,7 @@ const Home = () => {
             <span className="social-icon">💼</span>
             <span>LinkedIn</span>
           </a>
-          <a href="https://github.com/kevalsolankure" className="social-link github" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/keval15-ui" className="social-link github" target="_blank" rel="noopener noreferrer">
             <span className="social-icon">🐱</span>
             <span>GitHub</span>
           </a>

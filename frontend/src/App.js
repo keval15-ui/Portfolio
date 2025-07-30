@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/header';
 import Home from './components/home';
-import About from './components/about'; // Import the new component
+import About from './components/about';
+import Projects from './components/projects'; // Import the new Projects component
 
 function App() {
   return (
@@ -12,30 +13,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} /> {/* Use the About component */}
-          <Route path="/projects" element={
-            <div className="coming-soon creative-layout">
-              <div className="coming-soon-content">
-                <div className="decorative-element star-2">✨</div>
-                <h2>My Projects</h2>
-                <div className="project-preview-grid">
-                  <div className="project-placeholder">
-                    <div className="project-icon">💻</div>
-                    <p>Web Apps</p>
-                  </div>
-                  <div className="project-placeholder">
-                    <div className="project-icon">📱</div>
-                    <p>Mobile Apps</p>
-                  </div>
-                  <div className="project-placeholder">
-                    <div className="project-icon">🎨</div>
-                    <p>UI/UX Design</p>
-                  </div>
-                </div>
-                <div className="sticky-note">Exciting projects loading... 🚀</div>
-              </div>
-            </div>
-          } />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} /> {/* Use the Projects component */}
           <Route path="/skills" element={
             <div className="coming-soon creative-layout">
               <div className="coming-soon-content">

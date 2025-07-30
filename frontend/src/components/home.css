@@ -358,6 +358,18 @@
   animation: rocket 2s ease-in-out infinite;
 }
 
+/* Read More Button */
+.read-more-btn {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.read-more-btn:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
 /* Animation Keyframes */
 @keyframes nameGlow {
   0%, 100% {
