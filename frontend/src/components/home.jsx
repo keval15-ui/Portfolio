@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './home.css';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -42,23 +43,6 @@ const Home = () => {
           <div className="portfolio-3d-text">
             <span className="portfolio-text">PORTFOLIO</span>
             <div className="text-shadow" aria-hidden="true"></div>
-          </div>
-        </div>
-
-        {/* About Me Preview */}
-        <div className="about-preview">
-          <h3 className="about-title">About Me</h3>
-          <div className="about-content">
-            <div className="handwritten-intro">
-              <p>Hey there! I'm a passionate frontend developer who loves bringing creative ideas to life through code.</p>
-              <p>Specializing in React & JavaScript ✨</p>
-            </div>
-            <div className="photo-frame">
-              <div className="frame-inner">
-                <div className="placeholder-photo">📷</div>
-                <div className="frame-caption">Keval</div>
-              </div>
-            </div>
           </div>
         </div>
 

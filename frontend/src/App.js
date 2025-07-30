@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/header';
 import Home from './components/home';
+import About from './components/about'; // Import the new component
 
 function App() {
   return (
@@ -11,20 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={
-            <div className="coming-soon creative-layout">
-              <div className="coming-soon-content">
-                <div className="decorative-element star-1">⭐</div>
-                <div className="decorative-element paper-clip">📎</div>
-                <h2>About Me</h2>
-                <div className="handwritten-text">
-                  <p>Hi! I'm a passionate frontend developer who loves creating beautiful, interactive web experiences.</p>
-                  <p>Currently crafting this section with lots of creativity and attention to detail...</p>
-                </div>
-                <div className="sticky-note">Coming Soon! 🎨</div>
-              </div>
-            </div>
-          } />
+          <Route path="/about" element={<About />} /> {/* Use the About component */}
           <Route path="/projects" element={
             <div className="coming-soon creative-layout">
               <div className="coming-soon-content">
