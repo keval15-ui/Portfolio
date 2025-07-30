@@ -160,7 +160,7 @@ html {
   margin-bottom: 1rem;
   font-weight: 700;
   animation: fadeInUp 1.2s ease;
-  background: linear-gradient(45deg, #fff, #e0e7ff);
+  background: linear-gradient(45deg, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -661,11 +661,11 @@ html {
   position: relative;
   display: inline-block;
 }
-
-.portfolio-text {
+/* changes for portfolio name ,animation and everything else */
+.portfolio-text {      
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 900;
-  color: #e53e3e;
+  color: #fbbf24 ;
   text-shadow: 
     2px 2px 0px #c53030,
     4px 4px 0px #9c2626,
