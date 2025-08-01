@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './contact.css';
 
 const Contact = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,7 +14,8 @@ const Contact = () => {
   const [formStatus, setFormStatus] = useState({
     submitted: false,
     error: false,
-    message: ''
+    message: '',
+    loading: false
   });
 
   const handleChange = (e) => {
@@ -26,28 +29,55 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Simulate form submission
-    if (formData.name && formData.email && formData.message) {
-      setFormStatus({
-        submitted: true,
-        error: false,
-        message: 'Thank you for your message! I\'ll get back to you soon.'
-      });
-      
-      // Reset form after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-    } else {
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
       setFormStatus({
         submitted: false,
         error: true,
-        message: 'Please fill out all required fields.'
+        message: 'Please fill out all required fields.',
+        loading: false
       });
+      return;
     }
+    
+    // Set loading state
+    setFormStatus({
+      ...formStatus,
+      loading: true
+    });
+
+    // Replace with your actual EmailJS service ID, template ID, and public key
+    const serviceId = 'service_xyjl9d7';
+    const templateId = 'template_az5thv7';
+    const publicKey = 'VBT2EsL31Da1bQV8o';
+    
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey)
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setFormStatus({
+          submitted: true,
+          error: false,
+          message: 'Thank you for your message! I\'ll get back to you soon.',
+          loading: false
+        });
+        
+        // Reset form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error.text);
+        setFormStatus({
+          submitted: false,
+          error: true,
+          message: 'Something went wrong. Please try again later.',
+          loading: false
+        });
+      });
   };
 
   return (
@@ -97,7 +127,7 @@ const Contact = () => {
                   </button>
                 </div>
               ) : (
-                <form className="contact-form" onSubmit={handleSubmit}>
+                <form className="contact-form" ref={form} onSubmit={handleSubmit}>
                   {formStatus.error && (
                     <div className="form-error-message">
                       {formStatus.message}
@@ -151,9 +181,19 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   
-                  <button type="submit" className="submit-btn">
-                    <span>Send Message</span>
-                    <div className="button-decoration">📨</div>
+                  <button 
+                    type="submit" 
+                    className="submit-btn"
+                    disabled={formStatus.loading}
+                  >
+                    {formStatus.loading ? (
+                      <span>Sending...</span>
+                    ) : (
+                      <>
+                        <span>Send Message</span>
+                        <div className="button-decoration">📨</div>
+                      </>
+                    )}
                   </button>
                 </form>
               )}
