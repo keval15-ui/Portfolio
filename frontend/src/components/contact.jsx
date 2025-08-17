@@ -147,7 +147,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="form-group">
-                    <label htmlFor="email">Email <span className="required">*</span></label>
+                    <label htmlFor="email"> Your Email <span className="required">*</span></label>
                     <input 
                       type="email" 
                       id="email" 
@@ -209,8 +209,8 @@ const Contact = () => {
                 <div className="connect-icon">📧</div>
                 <h3>Email</h3>
                 <p>Feel free to email me directly at:</p>
-                <a href="mailto:keval.solankure@example.com" className="connect-link">
-                  keval.solankure@example.com
+                <a href="mailto:kevalsolankure123@gmail.com" className="connect-link">
+                  kevalsolankure123@gmail.com
                 </a>
               </div>
               
@@ -224,11 +224,11 @@ const Contact = () => {
               </div>
               
               <div className="connect-card">
-                <div className="connect-icon">🐱</div>
+                <div className="connect-icon">🤖</div>
                 <h3>GitHub</h3>
                 <p>Check out my code repositories:</p>
-                <a href="https://github.com/kevalsolankure" target="_blank" rel="noopener noreferrer" className="connect-link">
-                  github.com/kevalsolankure
+                <a href="https://github.com/keval15-ui" target="_blank" rel="noopener noreferrer" className="connect-link">
+                  github.com/keval15-ui
                 </a>
               </div>
               
@@ -237,9 +237,8 @@ const Contact = () => {
                 <h3>Social Media</h3>
                 <p>Follow me on social platforms:</p>
                 <div className="social-links-grid">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-media-link">Twitter</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-media-link">Instagram</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-media-link">Dribbble</a>
+                  {/* <a href="#" target="_blank" rel="noopener noreferrer" className="social-media-link">Instagram</a> */}
+                 
                 </div>
               </div>
             </div>

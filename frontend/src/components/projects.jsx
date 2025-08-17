@@ -54,7 +54,7 @@ const Projects = () => {
                   <span className="link-icon">🔗</span>
                   <span>Live Demo</span>
                 </a>
-                <a href="https://your-github-repo-link.com" className="project-link code-link">
+                <a href="https://github.com/keval15-ui/Portfolio" className="project-link code-link">
                   <span className="link-icon">💻</span>
                   <span>View Code</span>
                 </a>
