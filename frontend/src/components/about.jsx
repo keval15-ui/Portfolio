@@ -47,9 +47,17 @@ const About = () => {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <div className="timeline-date">2020 - Present</div>
-                <h3>Frontend Developer</h3>
-                <p>Working on building responsive, user-friendly web applications using modern JavaScript frameworks like React.</p>
+                <div className="timeline-date">2025 - Present</div>
+                <h3>Achievements & Roles at SRM University</h3>
+                <p>🏆 Winner – Build 2 Deploy (Exadata Hackathon): Built and deployed an ML model using vector regression to predict batsman performance.
+
+🌐 Participant – Genesis 24 (Web Development Symposium): Competed in a national-level Web Development event.
+
+👨‍💻 Technical Head – White Hat Hackers Club: Guided peers, organized technical activities, and mentored juniors.
+
+🧭 Event Coordinator – E-Treasure Hunt: Successfully planned and executed a university-level treasure hunt event.
+
+🔹 Technical Member – Exadata & NIC: Actively contributing to technical clubs at SRM through projects and events.</p>
                 <div className="timeline-tag">Professional</div>
               </div>
             </div>
@@ -57,9 +65,9 @@ const About = () => {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <div className="timeline-date">2018 - 2020</div>
-                <h3>Computer Science Degree</h3>
-                <p>Graduated with a degree in Computer Science, focusing on web technologies and user interface design.</p>
+                <div className="timeline-date">2025 - 2026</div>
+                <h3>2024 Aug – Present | B.Tech CSE (Big Data Analytics), SRM University</h3>
+                <p>Currently pursuing my degree with a focus on machine learning, data visualization, and analytics in second year .</p>
                 <div className="timeline-tag">Education</div>
               </div>
             </div>
@@ -67,9 +75,9 @@ const About = () => {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <div className="timeline-date">2017 - 2018</div>
-                <h3>First Coding Project</h3>
-                <p>Built my first web application, igniting my passion for frontend development and interactive experiences.</p>
+                <div className="timeline-date">2024 - 2025</div>
+                <h3>2024 | Started B.Tech Journey at SRM (Aug 18, 2024)</h3>
+                <p>Embarked on my engineering journey in Big Data Analytics.</p>
                 <div className="timeline-tag">Personal</div>
               </div>
             </div>

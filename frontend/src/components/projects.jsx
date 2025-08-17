@@ -50,10 +50,6 @@ const Projects = () => {
               </div>
               {/* to change the links of them  */}
               <div className="project-links">
-                <a href="https://your-live-demo-link.com" className="project-link demo-link">
-                  <span className="link-icon">🔗</span>
-                  <span>Live Demo</span>
-                </a>
                 <a href="https://github.com/keval15-ui/Portfolio" className="project-link code-link">
                   <span className="link-icon">💻</span>
                   <span>View Code</span>
