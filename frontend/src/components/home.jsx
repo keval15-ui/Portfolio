@@ -55,7 +55,7 @@ const Home = () => {
           <h3 className="about-title">A Little About Me</h3>
           <div className="about-content">
             <div className="handwritten-intro">
-              <p>I’m Keval, a B.Tech CSE (Big Data Analytics) student at SRM University, passionate about machine learning, data visualization, and analytics. I’ve won the Build 2 Deploy hackathon, participated in Genesis 24 (Web Development), and contributed as Technical Head of White Hat Hackers Club, Event Coordinator of E-Treasure Hunt, and Technical Member of Exadata and NIC.</p>
+              <p>Keval is a B.Tech CSE (Big Data Analytics) student at SRM University, passionate about machine learning, data visualization, and analytics.</p>
               <p>I believe in clean code, responsive design, and creating delightful user experiences.</p>
               <button className="creative-cta read-more-btn" onClick={handleReadMore}>
                 <span>Read More</span>

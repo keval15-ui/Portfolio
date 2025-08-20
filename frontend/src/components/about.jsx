@@ -33,7 +33,7 @@ const About = () => {
             </div>
             <div className="about-intro-text">
               <h2 className="handwritten-title">Hello there!</h2>
-              <p>I'm Keval, a passionate frontend developer who loves turning complex problems into simple, beautiful and intuitive designs. When I'm not coding or pushing pixels, you'll find me exploring new technologies and creative coding techniques.</p>
+              <p>I’m Keval, a B.Tech CSE (Big Data Analytics) student at SRM University, passionate about machine learning, data visualization, and analytics. I’ve won the Build 2 Deploy hackathon, participated in Genesis 24 (Web Development), and contributed as Technical Head of White Hat Hackers Club, Event Coordinator of E-Treasure Hunt, and Technical Member of Exadata and NIC.</p>
               <p>My journey in web development started with a curiosity about how websites work and has evolved into a career focused on creating exceptional user experiences.</p>
             </div>
           </div>
