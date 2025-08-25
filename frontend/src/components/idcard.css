@@ -1,0 +1,242 @@
+/* ID Card Container */
+.id-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Strap (the black string/lanyard) */
+.strap {
+  width: 4px;
+  height: 80px;
+  background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.3);
+  animation: strapSway 4s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.strap::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #333;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ID Card */
+.id-card {
+  width: 320px;
+  height: 200px;
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  border-radius: 12px;
+  box-shadow: 
+    0 12px 30px rgba(0, 0, 0, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  position: relative;
+  overflow: hidden;
+  animation: cardSwing 4s ease-in-out infinite;
+  transform-origin: top center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* Card Header */
+.card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.company-name {
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Photo Container */
+.photo-container {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 12px;
+  position: relative;
+  box-shadow: 
+    0 3px 8px rgba(0, 0, 0, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 3px solid white;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-container:hover .profile-photo {
+  transform: scale(1.1);
+}
+
+/* Card Info */
+.card-info {
+  text-align: center;
+  width: 100%;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.role {
+  font-size: 12px;
+  color: #718096;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Card Footer */
+.card-footer {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+}
+
+.id-number {
+  font-size: 8px;
+  color: #a0aec0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes strapSway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0.8deg);
+  }
+  75% {
+    transform: rotate(-0.8deg);
+  }
+}
+
+@keyframes cardSwing {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  25% {
+    transform: rotate(1.2deg) translateY(1px);
+  }
+  75% {
+    transform: rotate(-1.2deg) translateY(1px);
+  }
+}
+
+/* Hover Effects */
+.id-card:hover {
+  transform: scale(1.05) rotate(0deg);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.1);
+  animation-play-state: paused;
+}
+
+.id-card-container:hover .strap {
+  animation-play-state: paused;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .id-card {
+    width: 280px;
+    height: 170px;
+  }
+  
+  .card-body {
+    padding: 16px 12px 8px;
+  }
+  
+  .photo-container {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .name {
+    font-size: 16px;
+  }
+  
+  .role {
+    font-size: 11px;
+  }
+}
+
+/* Additional realistic effects */
+.id-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.id-card:hover::before {
+  opacity: 1;
+}
+
+/* Subtle pattern overlay */
+.card-body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(120, 119, 198, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}

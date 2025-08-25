@@ -68,6 +68,56 @@
   margin: 0 auto;
 }
 
+/* Floating ID Card on Right Side */
+.floating-id-card {
+  position: fixed;
+  top: 20%;
+  right: 2%;
+  z-index: 10;
+  transform: translateY(-50%);
+  animation: floatIn 1.5s ease-out;
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+/* Responsive adjustments for floating ID card */
+@media (max-width: 1400px) {
+  .floating-id-card {
+    right: 1%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .floating-id-card {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-id-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /* Header Section */
 .about-header {
   text-align: center;

@@ -1,5 +1,6 @@
 import React from 'react';
 import './about.css';
+import IDCard from './idcard';
 
 const About = () => {
   return (
@@ -17,10 +18,20 @@ const About = () => {
       </div>
 
       <div className="about-container">
+        {/* Floating ID Card on Right Side */}
+        <div className="floating-id-card">
+          <IDCard 
+            name="Keval Solankure" 
+            role="Big Data Analystics" 
+            photo="/meraphoto.jpg"
+            company="SRM University"
+          />
+        </div>
+
         {/* Header */}
         <div className="about-header">
           <h1 className="about-title">About Me</h1>
-          <div className="about-subtitle">Frontend Developer & UI Enthusiast</div>
+          <div className="about-subtitle">Big Data Analystics & UI Enthusiast</div>
         </div>
 
         {/* Introduction */}
