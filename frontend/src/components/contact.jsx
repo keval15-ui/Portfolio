@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { FaGithub } from 'react-icons/fa'; // Add this import
 import './contact.css';
 
 const Contact = () => {
@@ -224,7 +225,7 @@ const Contact = () => {
               </div>
               
               <div className="connect-card">
-                <div className="connect-icon">🤖</div>
+                <div className="connect-icon"><FaGithub /></div>
                 <h3>GitHub</h3>
                 <p>Check out my code repositories:</p>
                 <a href="https://github.com/keval15-ui" target="_blank" rel="noopener noreferrer" className="connect-link">

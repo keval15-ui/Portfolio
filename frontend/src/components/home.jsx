@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaGithub } from 'react-icons/fa';  // Import GitHub icon
 import './home.css';
 
 const Home = () => {
@@ -65,7 +66,11 @@ const Home = () => {
             <div className="photo-frame">
               <div className="frame-inner">
                 <div className="placeholder-photo">
-                  👨‍💻
+                  <img
+                    src="/meraphoto.jpg"
+                    alt="Keval Solankure"
+                    className="profile-image"
+                  />
                 </div>
                 <div className="frame-caption">
                   That's me!
@@ -110,7 +115,7 @@ const Home = () => {
             <span>LinkedIn</span>
           </a>
           <a href="https://github.com/keval15-ui" className="social-link github" target="_blank" rel="noopener noreferrer">
-            <span className="social-icon">🤖</span>
+            <span className="social-icon"><FaGithub /></span>
             <span>GitHub</span>
           </a>
         </div>

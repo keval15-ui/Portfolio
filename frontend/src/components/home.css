@@ -370,6 +370,14 @@
   background: linear-gradient(135deg, #764ba2, #667eea);
 }
 
+/* Profile Image */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 /* Animation Keyframes */
 @keyframes nameGlow {
   0%, 100% {

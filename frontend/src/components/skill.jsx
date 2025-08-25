@@ -38,7 +38,7 @@ const Skills = () => {
             <div className="skill-category">
               <div className="category-header">
                 <div className="category-icon">🎨</div>
-                <h3>Frontend Development</h3>
+                <h3> Programming Languages</h3>
               </div>
               
               <div className="skill-bars">
@@ -147,9 +147,7 @@ const Skills = () => {
               <ul className="tool-list">
                 <li>VS Code</li>
                 <li>Git & GitHub</li>
-                <li>npm/yarn</li>
-                <li>Webpack</li>
-                <li>ESLint</li>
+              
               </ul>
             </div>
             
@@ -158,10 +156,10 @@ const Skills = () => {
               <h3>Design</h3>
               <ul className="tool-list">
                 <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Sketch</li>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
+                <li>Canva</li>
+                
+                
+                
               </ul>
             </div>
             
@@ -170,10 +168,9 @@ const Skills = () => {
               <h3>Deployment</h3>
               <ul className="tool-list">
                 <li>Vercel</li>
-                <li>Netlify</li>
-                <li>Heroku</li>
+                <li>Supabase</li>
                 <li>Firebase</li>
-                <li>AWS</li>
+                
               </ul>
             </div>
             

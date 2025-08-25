@@ -38,7 +38,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="nav-brand">
           <Link to="/" onClick={closeMobileMenu}>
-            <h2>portfolio</h2>
+            <h2>Portfolio</h2>
           </Link>
         </div>
         
