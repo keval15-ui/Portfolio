@@ -92,15 +92,7 @@ const Skills = () => {
               </div>
               
               <div className="skill-bars">
-                <div className="skill-item">
-                  <div className="skill-info">
-                    <span>Redux</span>
-                    <span className="skill-percentage">80%</span>
-                  </div>
-                  <div className="skill-progress-bg">
-                    <div className="skill-progress-fill" style={{width: '80%'}}></div>
-                  </div>
-                </div>
+                
                 
                 <div className="skill-item">
                   <div className="skill-info">
@@ -246,7 +238,7 @@ const Skills = () => {
               </div>
               <div className="learning-item">
                 <div className="learning-icon">🔄</div>
-                <span>React Native</span>
+                <span>Next.js</span>
               </div>
               <div className="learning-item">
                 <div className="learning-icon">🔄</div>
@@ -256,14 +248,7 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
-        {/* <div className="skills-cta">
-          <p>Want to see how I've applied these skills in real projects?</p>
-          <div className="skills-buttons">
-            <a href="/projects" className="skills-btn projects-btn">View My Projects</a>
-            <a href="/contact" className="skills-btn contact-btn">Get In Touch</a>
-          </div>
-        </div> */}
+       
       </div>
     </div>
   );

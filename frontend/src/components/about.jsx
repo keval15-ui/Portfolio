@@ -114,7 +114,7 @@ const About = () => {
                 <div className="skill-pill">VS Code</div>
                 <div className="skill-pill">Figma</div>
                 <div className="skill-pill">npm/yarn</div>
-                <div className="skill-pill">Webpack</div>
+                
               </div>
             </div>
             
