@@ -60,16 +60,12 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-date">2025 - Present</div>
                 <h3>Achievements & Roles at SRM University</h3>
-                <p>🏆 Winner – Build 2 Deploy (Exadata Hackathon): Built and deployed an ML model using vector regression to predict batsman performance.
-
-🌐 Participant – Genesis 24 (Web Development Symposium): Competed in a national-level Web Development event.
-
-👨‍💻 Technical Head – White Hat Hackers Club: Guided peers, organized technical activities, and mentored juniors.
-
-🧭 Event Coordinator – E-Treasure Hunt: Successfully planned and executed a university-level treasure hunt event.
-
-🔹 Technical Member – Exadata & NIC: Actively contributing to technical clubs at SRM through projects and events.</p>
-                <div className="timeline-tag">Professional</div>
+                <p>🏆 Winner – Build 2 Deploy (Exadata Hackathon): Developed and deployed a machine learning model using vector regression to predict batsman performance.</p>
+                <p>🌐 Participant – Genesis 24 (Web Development Symposium): Competed in a national-level Web Development event.</p>
+                 <p>👨‍💻 White Hat Hackers Club: Served as Technical Head and Event Coordinator, where I guided peers, organized technical activities, and managed events.</p>
+                 <p>🧭 Event Coordinator – E-Treasure Hunt: Successfully planned and executed a university-level treasure hunt event.</p>
+                 <p>🔹 Technical Member – Exadata & NIC: Actively contributing to technical clubs at SRM through projects, workshops, and events.</p>
+                 <div className="timeline-tag">Professional</div>
               </div>
             </div>
             
